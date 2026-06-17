@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Öğr. Üyesi Gamze ALAK — Akademik Portfolyo</title>
+    <meta name="description"
+        content="Dr. Öğr. Üyesi Gamze ALAK'ın akademik kariyer sayfası. Otizm Spektrum Bozukluğu, özel eğitim ve erken çocukluk alanlarında araştırmalar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">G<span class="dot">.</span>A</a>
+            <div class="nav-right" style="display: flex; align-items: center; gap: 16px;">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">Hakkımda</a></li>
+                    <li><a href="#experience">Kariyer</a></li>
+                    <li><a href="#education">Eğitim</a></li>
+                    <li><a href="#publications">Yayınlar</a></li>
+                    <li><a href="#projects">Projeler</a></li>
+                    <li><a href="#courses">Dersler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">Atatürk Üniversitesi · Özel Eğitim Bölümü</p>
+                <h1 class="hero-title">
+                    Dr. Öğr. Üyesi<br>
+                    <span class="name-highlight">Gamze ALAK</span>
+                </h1>
+                <p class="hero-desc">Otizm Spektrum Bozukluğu, erken çocukluk özel eğitimi ve dil-iletişim becerileri
+                    üzerine araştırmalar yürütüyorum.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">29</span>
+                        <span class="stat-label">Yayın</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">21</span>
+                        <span class="stat-label">Atıf</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Yıl Deneyim</span>
+                    </div>
+                </div>
+                <a href="#about" class="scroll-cta">
+                    <span>Keşfet</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-frame">
+                    <img src="gamze_alak.png" alt="Dr. Öğr. Üyesi Gamze ALAK">
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hakkımda</span>
+                <h2 class="section-title">Araştırma Odağım</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Atatürk Üniversitesi Kâzım Karabekir Eğitim Fakültesi Özel Eğitim Bölümü'nde <strong>Bölüm
+                            Başkanı</strong> ve <strong>Anabilim Dalı Başkanı</strong> olarak görev yapmaktayım.</p>
+                    <p>Araştırmalarım, <em>otizm spektrum bozukluğu</em> olan çocukların söz öncesi iletişim becerileri,
+                        anne yanıtlayıcılığı, oyun gelişimi ve okula uyum süreçleri üzerine yoğunlaşmaktadır. Bu alanda
+                        boylamsal çalışmalar yürütmekte ve ölçek uyarlama/geliştirme çalışmalarına katkıda
+                        bulunmaktayım.</p>
+                </div>
+                <div class="research-areas">
+                    <h3>Araştırma Alanları</h3>
+                    <div class="area-tags">
+                        <span class="area-tag">Otizm Spektrum Bozukluğu</span>
+                        <span class="area-tag">Erken Çocukluk Özel Eğitimi</span>
+                        <span class="area-tag">Dil ve İletişim Becerileri</span>
+                        <span class="area-tag">Anne Yanıtlayıcılığı</span>
+                        <span class="area-tag">Zihinsel Yetersizlik</span>
+                        <span class="area-tag">Uygulamalı Davranış Analizi</span>
+                        <span class="area-tag">Ölçek Geliştirme ve Uyarlama</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Career Timeline -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kariyer Yolculuğu</span>
+                <h2 class="section-title">Günümüzden Geçmişe</h2>
+            </div>
+            <div class="timeline">
+                <!-- Current -->
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 – Günümüz</span>
+                        <h3>Dr. Öğr. Üyesi</h3>
+                        <p class="timeline-place">Atatürk Üniversitesi, Kâzım Karabekir Eğitim Fakültesi, Özel Eğitim
+                            Bölümü</p>
+                        <div class="timeline-details">
+                            <span class="detail-badge">Bölüm Başkanı <small>(2021–)</small></span>
+                            <span class="detail-badge">Anabilim Dalı Başkanı <small>(2021–)</small></span>
+                            <span class="detail-badge">Akademik Teşvik Komisyonu Başkanı <small>(2021–)</small></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 – 2020</span>
+                        <h3>Dr. Öğr. Üyesi</h3>
+                        <p class="timeline-place">Aydın Adnan Menderes Üniversitesi, Eğitim Fakültesi, Özel Eğitim
+                            Bölümü</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2016 – 2019</span>
+                        <h3>Araştırma Görevlisi</h3>
+                        <p class="timeline-place">Kafkas Üniversitesi, Eğitim Fakültesi, Eğitim Bilimleri Bölümü</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2012 – 2016</span>
+                        <h3>Araştırma Görevlisi</h3>
+                        <p class="timeline-place">Ankara Üniversitesi, Eğitim Bilimleri Fakültesi, Özel Eğitim Bölümü
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2011 – 2012</span>
+                        <h3>Araştırma Görevlisi</h3>
+                        <p class="timeline-place">Kafkas Üniversitesi, Eğitim Fakültesi, Özel Eğitim Bölümü</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Eğitim</span>
+                <h2 class="section-title">Akademik Geçmiş</h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
+                        </svg>
+                    </div>
+                    <span class="edu-year">2011 – 2018</span>
+                    <h3>Doktora</h3>
+                    <p>Ankara Üniversitesi<br>Eğitim Bilimleri Fakültesi, Özel Eğitim Bölümü</p>
+                    <p class="thesis-title"><em>Okul öncesi dönemde sözel olmayan otizm spektrum bozukluğu tanılı
+                            çocukların söz öncesi becerilerinin gelişiminde anne yanıtlayıcılığının etkisinin boylamsal
+                            incelenmesi</em></p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
+                        </svg>
+                    </div>
+                    <span class="edu-year">2009 – 2011</span>
+                    <h3>Yüksek Lisans</h3>
+                    <p>Atatürk Üniversitesi<br>Kâzım Karabekir Eğitim Fakültesi, Temel Eğitim</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5" />
+                        </svg>
+                    </div>
+                    <span class="edu-year">2005 – 2009</span>
+                    <h3>Lisans</h3>
+                    <p>Atatürk Üniversitesi<br>Kâzım Karabekir Eğitim Fakültesi, Temel Eğitim</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Yayınlar</span>
+                <h2 class="section-title">Seçili Akademik Çalışmalar</h2>
+            </div>
+
+            <div class="pub-category">
+                <h3 class="pub-cat-title">
+                    <span class="pub-cat-icon">📄</span>
+                    Uluslararası Hakemli Makaleler
+                </h3>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <span class="pub-year">2026</span>
+                        <div class="pub-info">
+                            <h4>Perspective of Turkish society toward autistic individuals: Personal experiences,
+                                knowledge, and interaction comfort</h4>
+                            <p class="pub-authors">Alak G.</p>
+                            <p class="pub-journal">PLOS ONE, cilt.21, sa.6 <span
+                                    class="index-badge">SCI-Expanded</span><span class="index-badge">Scopus</span></p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2026</span>
+                        <div class="pub-info">
+                            <h4>Relationship between imitation skills and maternal responsiveness for children with
+                                autism spectrum disorder: a longitudinal study</h4>
+                            <p class="pub-authors">Alak G.</p>
+                            <p class="pub-journal">International Journal of Developmental Disabilities, cilt.72, sa.3,
+                                ss.581-595 <span class="index-badge">SSCI</span><span class="index-badge">Scopus</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-info">
+                            <h4>Teacher-child relationships as mediators between repetitive behaviors and school
+                                adjustment in preschoolers with ASD</h4>
+                            <p class="pub-authors">Alak G., Ökcün M. Ç., Bahap Kudret Z., Bakkaloğlu H.</p>
+                            <p class="pub-journal">Journal of Research in Special Educational Needs, cilt.25, sa.4,
+                                ss.1036-1052 <span class="index-badge">ESCI</span><span
+                                    class="index-badge">Scopus</span></p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-info">
+                            <h4>The Turkish Short Version of the Sensory Experience Questionnaire: A Validity and
+                                Reliability Study in Children with ASD</h4>
+                            <p class="pub-authors">Alak G., Ökcün M. Ç.</p>
+                            <p class="pub-journal">Noropsikiyatri Arsivi, cilt.62, sa.3, ss.249-255 <span
+                                    class="index-badge">SCI-Expanded</span><span class="index-badge">Scopus</span></p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-info">
+                            <h4>A longitudinal examination of the relationship between object play and maternal
+                                responsiveness in minimally verbal ASD children</h4>
+                            <p class="pub-authors">Alak G.</p>
+                            <p class="pub-journal">Research in Autism, cilt.123 <span
+                                    class="index-badge">SSCI</span><span class="index-badge">Scopus</span></p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2019</span>
+                        <div class="pub-info">
+                            <h4>Examinations of the relations between gestures and vocabulary in children with autism
+                                spectrum disorder at different language stages</h4>
+                            <p class="pub-authors">Ökcün-Akçamuş M. Ç., Acarlar F., Kaysili B. K., Alak G.</p>
+                            <p class="pub-journal">Early Child Development and Care, cilt.189, sa.5, ss.777-791 <span
+                                    class="index-badge">SSCI</span><span class="index-badge">Scopus</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-category">
+                <h3 class="pub-cat-title">
+                    <span class="pub-cat-icon">📚</span>
+                    Kitap & Kitap Bölümleri
+                </h3>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <span class="pub-year">2021</span>
+                        <div class="pub-info">
+                            <h4>Söz öncesi iletişim / Otizm Spektrum Bozukluğu: Eğitsel değerlendirme</h4>
+                            <p class="pub-authors">Alak G. — Tanıdan Müdahaleye Otizm Spektrum Bozukluğu El Kitabı</p>
+                            <p class="pub-journal">Vize Akademi, Ankara</p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2020</span>
+                        <div class="pub-info">
+                            <h4>Zihinsel yetersizlikte sınıf yönetimi</h4>
+                            <p class="pub-authors">Alak G. — Özel eğitimde bütünleştirilmiş sınıf yönetimi</p>
+                            <p class="pub-journal">Pegem A Yayıncılık, Ankara</p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2019</span>
+                        <div class="pub-info">
+                            <h4>Söz öncesi dil gelişimi</h4>
+                            <p class="pub-authors">Alak G. — Yetersizliği olan bireylerin dil ve iletişim becerilerinin
+                                desteklenmesi</p>
+                            <p class="pub-journal">Pegem A Yayıncılık, Ankara</p>
+                        </div>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-year">2017</span>
+                        <div class="pub-info">
+                            <h4>Zihin Yetersizliği: Tarama, Tanılama ve Değerlendirme</h4>
+                            <p class="pub-authors">Alak G. — Zihin Yetersizliği ve Otizm Spektrum Bozukluğu</p>
+                            <p class="pub-journal">Pegem Akademi, Ankara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-more">
+                <a href="https://avesis.atauni.edu.tr/gamzealak/yayinlar" target="_blank" class="btn-outline">
+                    Tüm Yayınları Görüntüle
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projeler</span>
+                <h2 class="section-title">Araştırma Projeleri</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-status active">Devam Ediyor</div>
+                    <h3>Otizm Sempozyumu — Uluslararası Otizm Sempozyumu</h3>
+                    <p>Alak G., Karabacak İlter A., Çatıma Z., İlerstürk D., Bayırak Karsli M., Dalgıdı A., Tıryaki E.
+                        E., Kaba E.</p>
+                    <span class="project-fund">TÜBİTAK Projesi</span>
+                    <span class="project-year">2026</span>
+                </div>
+                <div class="project-card">
+                    <div class="project-status active">Devam Ediyor</div>
+                    <h3>Hızla Destekleme ADDIE Öğretim Tasarımı İle Hazırlanan WEB Tabanlı Öğretim Modülünün Etkisi</h3>
+                    <p>Alak G., Taşgın A., Özhan M. B., Çiftçi M., Kaya Y.</p>
+                    <span class="project-fund">TÜBİTAK Projesi, 3005 - Sosyal ve Beşeri Bilimlerde Yenilikçi
+                        Çözümler</span>
+                    <span class="project-year">2025 – 2026</span>
+                </div>
+                <div class="project-card">
+                    <div class="project-status completed">Tamamlandı</div>
+                    <h3>5. Sınıf Öğrencilerinin Otizm Spektrum Bozukluğu Damgalamasına Karşı Bilgi, Tutum, Davranışsal
+                        Niyet ve Düşünülen Benzerlik Düzeyleri Üzerindeki Etkilerinin İncelenmesi</h3>
+                    <p>Geliştirme Proje Destekli Programı</p>
+                    <span class="project-fund">BAP</span>
+                    <span class="project-year">2023 – 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dersler</span>
+                <h2 class="section-title">Verilen Dersler</h2>
+            </div>
+            <div class="courses-grid">
+                <div class="course-chip">Otizm Spektrum Bozukluğu</div>
+                <div class="course-chip">Uygulamalı Davranış Analizi</div>
+                <div class="course-chip">Dil ve İletişim Becerilerinin Desteklenmesi</div>
+                <div class="course-chip">Özel Eğitimde Değerlendirme ve BEP</div>
+                <div class="course-chip">Zihin Yetersizliğinde Öğretim Uyarlamaları</div>
+                <div class="course-chip">Dikkat Eksikliği ve Hiperaktivite Bozukluğu</div>
+                <div class="course-chip">Özel Eğitimde Sosyal Uyum Becerileri</div>
+                <div class="course-chip">Özel Eğitim ve Kaynaştırma</div>
+                <div class="course-chip">Zihin Engellilere İletişim Becerileri</div>
+                <div class="course-chip">Zihin Engellilere Matematik Öğretimi</div>
+                <div class="course-chip">Topluma Hizmet Uygulamaları</div>
+                <div class="course-chip">Öğretmenlik Uygulaması</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Bana Ulaşın</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+                        </svg>
+                    </div>
+                    <h3>E-posta</h3>
+                    <div class="profile-links">
+                        <a href="mailto:gamzealak@atauni.edu.tr">gamzealak@atauni.edu.tr</a>
+                        <a href="mailto:gamzealak@gmail.com">gamzealak@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Atatürk Üniversitesi<br>Kâzım Karabekir Eğitim Fakültesi<br>Özel Eğitim Bölümü<br>Erzurum,
+                        Türkiye</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                        </svg>
+                    </div>
+                    <h3>Akademik Profiller</h3>
+                    <div class="profile-links">
+                        <a href="https://avesis.atauni.edu.tr/gamzealak" target="_blank">AVESİS</a>
+                        <a href="https://scholar.google.com.tr/citations?user=XxVmdjkAAAAJ" target="_blank">Google
+                            Scholar</a>
+                        <a href="https://orcid.org/0000-0002-4054-5617" target="_blank">ORCID</a>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57194654171"
+                            target="_blank">Scopus</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                        </svg>
+                    </div>
+                    <h3>Sosyal Medya</h3>
+                    <div class="profile-links">
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">X (Twitter)</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dr. Öğr. Üyesi Gamze ALAK</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
