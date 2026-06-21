@@ -2128,36 +2128,17 @@ hr.section-divider { border: none; border-top: 1px solid var(--clr-border); marg
     flex: none;
 }
 
-/* Mobile: info is hidden below book, slides down on hover */
+/* Info is completely hidden as requested */
 .book-info {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.4s ease, max-height 0.5s ease;
-    pointer-events: none;
-    text-align: center;
-    padding-top: 0;
+    display: none !important;
 }
 
 /* Base Hover Behavior (applies to ALL screens) */
-.book-wrapper:hover .book-info {
-    opacity: 1;
-    max-height: 250px;
-    padding-top: 20px;
-    pointer-events: auto;
-}
 .book-wrapper:hover .book-mockup {
     transform: translateY(-8px) scale(1.05); /* Nice lift effect */
 }
 
 @media (max-width: 768px) {
-    /* For tiny screens, just show it open all the time */
-    .book-info {
-        opacity: 1;
-        max-height: 150px;
-        padding-top: 16px;
-        pointer-events: auto;
-    }
     .book-wrapper {
         width: 140px;
     }
