@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAS2026 — Uluslararası Otizm Sempozyumu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html#hero" class="nav-logo">G<span class="dot">.</span>A</a>
+            <div class="nav-right" style="display: flex; align-items: center; gap: 16px;">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html#about">Hakkımda</a></li>
+                    <li><a href="../index.html#experience">Kariyer</a></li>
+                    <li><a href="../index.html#education">Eğitim</a></li>
+                    <li><a href="../index.html#publications">Yayınlar</a></li>
+                    <li><a href="../index.html#projects">Projeler</a></li>
+                    <li><a href="../index.html#courses">Dersler</a></li>
+                    <li><a href="../index.html#contact">İletişim</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="project-eyebrow">Atatürk Üniversitesi · Özel Eğitim Bölümü</p>
+                <h1 class="project-title">Uluslararası Otizm Sempozyumu 2026</h1>
+                <p class="project-subtitle">Otizm spektrum bozukluğu alanında ulusal ve uluslararası araştırmacıları bir araya getiren bilimsel platform.</p>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Kısa Ad</span>
+                        <span class="meta-value">IAS2026</span>
+                    </div>
+                    <div class="meta-item"><span class="meta-label">Yıl</span><span class="meta-value">2026</span></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Durum</span>
+                        <span class="meta-value">Devam Ediyor</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Kurum</span>
+                        <span class="meta-value">Atatürk Üniversitesi</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px;">
+                    <a href="https://ias2026.atauni.edu.tr/" target="_blank" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                        </svg>
+                        Resmi Web Sitesini Ziyaret Et
+                    </a>
+                    <a href="https://www.instagram.com/ias2026atauni" target="_blank" class="btn btn-instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="hero-logo-right">
+                <img id="ias2026-logo" src="../icons/ias2026_logo.png" alt="IAS2026 Logosu">
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="content">
+        <div class="content-grid">
+            <div>
+                
+<div class="content-section">
+    <span class="section-label">Proje Hakkında</span>
+    <h2>Sempozyum Özeti</h2>
+    <p>Uluslararası Otizm Sempozyumu (IAS2026), otizm spektrum bozukluğu (OSB) alanındaki bilimsel bilginin paylaşılmasını ve tartışılmasını amaçlayan kapsamlı bir akademik etkinliktir. Sempozyum; araştırmacılar, klinisyenler, eğitimciler ve politika yapıcıları aynı platformda buluşturmayı hedeflemektedir.</p>
+    <p>Atatürk Üniversitesi Kâzım Karabekir Eğitim Fakültesi Özel Eğitim Bölümü tarafından koordine edilen bu etkinlik, OSB alanındaki en güncel araştırma bulgularının, kanıta dayalı müdahale yaklaşımlarının ve ulusal/uluslararası politika gelişmelerinin tartışıldığı bir bilim forumu niteliği taşımaktadır.</p>
+</div>
+<hr class="section-divider">
+<div class="content-section">
+    <span class="section-label">Hedefler</span>
+    <h2>Sempozyum Hedefleri</h2>
+    <ul class="objectives-list">
+        <li><span class="obj-num">1</span>Otizm spektrum bozukluğu alanındaki ulusal ve uluslararası araştırma bulgularını paylaşmak ve bilgi birikimini yaygınlaştırmak.</li>
+        <li><span class="obj-num">2</span>Kanıta dayalı eğitim ve müdahale yaklaşımlarını farklı disiplinlerden uzmanlarla birlikte ele almak.</li>
+        <li><span class="obj-num">3</span>OSB olan bireyler, aileleri ve onlarla çalışan profesyoneller arasında köprü kurmak.</li>
+        <li><span class="obj-num">4</span>Ulusal OSB politikalarının geliştirilmesine katkı sağlayacak akademik çıktılar üretmek.</li>
+    </ul>
+</div>
+<hr class="section-divider">
+<div class="content-section">
+    <span class="section-label">Koordinatör Araştırmacı</span>
+    <h2>Proje Yürütücüsü</h2>
+    <p>Sempozyum, <strong>Dr. Öğr. Üyesi Gamze ALAK</strong> koordinasyonunda yürütülmektedir. Dr. ALAK, otizm spektrum bozukluğu, erken çocukluk özel eğitimi ve dil-iletişim becerileri alanlarında ulusal ve uluslararası düzeyde araştırmalar yürütmektedir.</p>
+</div>
+
+            </div>
+            <aside>
+                <div class="info-card">
+                    <p class="info-card-title">Proje Bilgileri</p>
+                    <div class="info-row">
+                        <span class="info-key">Durum</span>
+                        <span class="info-val"><span class="badge badge-active">● Devam Ediyor</span></span>
+                    </div>
+                    <div class="info-row"><span class="info-key">Yıl</span><span class="info-val">2026</span></div>
+                    <div class="info-row">
+                        <span class="info-key">Kurum</span>
+                        <span class="info-val">Atatürk Üniversitesi</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-key">Resmi Site</span>
+                        <span class="info-val"><a href="https://ias2026.atauni.edu.tr/" target="_blank">Web Sitesi ↗</a></span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // Theme Toggle
+        const themeToggleBtn = document.getElementById('themeToggle');
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                if (newTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+                else document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', newTheme);
+            });
+        }
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                navToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
